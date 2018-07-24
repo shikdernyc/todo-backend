@@ -1,0 +1,25 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "A Restful API to interact with react-todo-app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikdernyc/todo-backend.git"
+  },
+  "author": "Asif Shikder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shikdernyc/todo-backend/issues"
+  },
+  "homepage": "https://github.com/shikdernyc/todo-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5"
+  }
+}
