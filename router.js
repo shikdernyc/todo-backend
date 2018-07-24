@@ -9,28 +9,28 @@ router.post('/api/todos/create', (req, res)=>{
     let {name} = req.body
     db.addToDo(name)
     .then((todo)=>{
-        res.send(todo)
+        res.json(todo)
     })
 })
 
 router.post('/api/todos/:id/toggle', (req, res)=>{
     db.toggleComplete(req.params.id)
     .then((todo)=>{
-        res.send(todo)
+        res.json(todo)
     })
 })
 
 router.get('/api/todos/:id', (req, res)=>{
     db.getToDo(req.params.id)
     .then((todo)=>{
-        res.send(todo)
+        res.json(todo)
     })
 })
 
 router.get('/api/todos', (req, res)=>{
     db.getAllToDos().
     then((todos)=>{
-        res.send(todos)
+        res.json(todos)
     })
 })
 
